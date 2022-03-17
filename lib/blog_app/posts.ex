@@ -5,9 +5,14 @@ defmodule BlogApp.Posts do
 
   import Ecto.Query, warn: false
   alias BlogApp.Repo
-
   alias BlogApp.Posts.Post
+  alias BlogApp.Comments
 
+  def add_comment(post_id, comment_params) do
+    comment_params
+    |> Map.put("post_id", post_id)
+    |> Comments.create_comment()
+  end
   @doc """
   Returns the list of posts.
 

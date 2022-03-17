@@ -1,4 +1,4 @@
-defmodule BlogAppWeb.LayoutViewTest do
+git branch -M maindefmodule BlogAppWeb.LayoutViewTest do
   use BlogAppWeb.ConnCase, async: true
 
   # When testing helpers, you may want to import Phoenix.HTML and

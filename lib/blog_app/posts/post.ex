@@ -1,8 +1,7 @@
 defmodule BlogApp.Posts.Post do
   use Ecto.Schema
   import Ecto.Changeset
-
-  alias BlogApp.Comments
+  alias BlogApp.Comments.Comment
 
   def add_comment(post_id, comment_params) do
     comment_params
@@ -14,6 +13,7 @@ defmodule BlogApp.Posts.Post do
     field :body, :string
     field :title, :string
     has_many :comments, Comment
+    
     timestamps()
   end
 

@@ -5,6 +5,7 @@ defmodule BlogAppWeb.PostController do
   alias BlogApp.Posts.Post
   alias BlogApp.Repo
   alias BlogApp.Comments
+  alias BlogApp.Comments.Comment
 
   def index(conn, _params) do
     posts = Posts.list_posts()
@@ -88,7 +89,4 @@ defmodule BlogAppWeb.PostController do
         |> redirect(to: Routes.post_path(conn, :show, post))
     end
   end
-
-
-
 end

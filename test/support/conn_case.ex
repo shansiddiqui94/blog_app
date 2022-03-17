@@ -1,3 +1,4 @@
+git remote add origin https://github.com/shansiddiqui94/blog_app.git
 defmodule BlogAppWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
