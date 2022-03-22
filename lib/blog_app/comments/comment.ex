@@ -12,7 +12,7 @@ defmodule BlogApp.Comments.Comment do
 
   @doc false
   def changeset(comment, attrs) do
-    comment
+   comment
     |> cast(attrs, [:name, :content, :post_id])
     |> validate_required([:name, :content, :post_id])
   end

@@ -29,10 +29,10 @@ defmodule BlogAppWeb.PostController do
     end
   end
 
-  def show(conn, %{"id" => id}) do
-    post = Posts.get_post!(id)
-    render(conn, "show.html", post: post)
-  end
+  # def show(conn, %{"id" => id}) do
+  #   post = Posts.get_post!(id)
+  #   render(conn, "show.html", post: post)
+  # end
 
   def edit(conn, %{"id" => id}) do
     post = Posts.get_post!(id)

@@ -2,11 +2,11 @@ defmodule BlogApp.Posts do
   @moduledoc """
   The Posts context.
   """
-
   import Ecto.Query, warn: false
   alias BlogApp.Repo
   alias BlogApp.Posts.Post
   alias BlogApp.Comments
+  #alias BlogWeb.PostView 
 
   def add_comment(post_id, comment_params) do
     comment_params
@@ -105,5 +105,10 @@ defmodule BlogApp.Posts do
   """
   def change_post(%Post{} = post, attrs \\ %{}) do
     Post.changeset(post, attrs)
+  end
+
+  def get_number_of_comments(post_id) do
+    post = get_post!(post_id) |> Repo.preload([:comments])
+    Enum.count(post.comments)
   end
 end
