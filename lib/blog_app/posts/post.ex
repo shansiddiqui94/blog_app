@@ -12,7 +12,7 @@ defmodule BlogApp.Posts.Post do
   schema "posts" do
     field :body, :string
     field :title, :string
-    has_many :comments, Comment
+    has_many :comments, BlogApp.Comments.Comment
     
     timestamps()
   end

@@ -52,6 +52,7 @@ defmodule BlogApp.Comments do
   def create_comment(attrs \\ %{}) do
     %Comment{}
     |> Comment.changeset(attrs)
+    |> IO.inspect(label: "Hello I am a comment")
     |> Repo.insert()
   end
 

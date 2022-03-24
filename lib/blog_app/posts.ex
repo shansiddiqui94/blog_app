@@ -9,9 +9,11 @@ defmodule BlogApp.Posts do
   #alias BlogWeb.PostView 
 
   def add_comment(post_id, comment_params) do
+    IO.inspect(comment_params, label: "in the add_comment")
     comment_params
     |> Map.put("post_id", post_id)
     |> Comments.create_comment()
+    # IO.inspects(Comments, label: "Creating a comment")
   end
   @doc """
   Returns the list of posts.

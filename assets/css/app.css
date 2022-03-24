@@ -151,3 +151,55 @@
 .comment.header {
   font-weight: bold;
 }
+
+.show {
+  border: 1px solid #464e2e;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  color: seagreen;
+  font-style: italic;
+  padding: 10px;
+  padding-right: 14px;
+  padding-left: 12px;
+  font-size: 17px;
+}
+
+.show:hover {
+  background-color: #b5fe83;
+  color: white;
+  border: 1px solid seagreen;
+}
+
+.edit {
+  border: 1px solid rgba(238, 166, 31, 0.856);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  font-style: italic;
+  padding: 10px;
+  padding-right: 14px;
+  padding-left: 12px;
+  font-size: 17px;
+}
+
+.edit:hover {
+  background-color: yellow;
+  color: white;
+  border: 1px solid yellow;
+}
+
+.delete {
+  border: 1px solid #630606;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  font-style: italic;
+  padding: 10px;
+  padding-right: 14px;
+  padding-left: 12px;
+  font-size: 17px;
+}
+
+.delete:hover {
+  background-color: #e83a14;
+  color: white;
+  border: 1px solid #e83a14;
+}

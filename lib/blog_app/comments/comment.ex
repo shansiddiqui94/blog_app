@@ -5,8 +5,7 @@ defmodule BlogApp.Comments.Comment do
   schema "comments" do
     field :content, :string
     field :name, :string
-    field :post_id, :id
-
+    belongs_to :post, BlogApp.Posts.Post, on_replace: :delete
     timestamps()
   end
 
