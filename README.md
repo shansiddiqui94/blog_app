@@ -1,5 +1,7 @@
 # BlogApp
 
+This is a C.R.U.D blog app
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
